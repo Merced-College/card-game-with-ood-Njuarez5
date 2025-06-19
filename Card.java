@@ -45,4 +45,10 @@ public class Card {
     public String toString() {
         return name + " of " + suit + " (Value: " + value + ")";
     }
+    System.out.println("\nSorted player cards by value:");
+    playerCards.sort((a, b) -> Integer.compare(a.getValue(), b.getValue()));
+
+    for (Card c : playerCards) {
+    System.out.println(c);
+    }
 }
